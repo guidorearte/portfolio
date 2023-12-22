@@ -6,6 +6,7 @@ import grhotels from './assets/presentacion-grhotels.png'
 import guido from './assets/guido.jpg'
 import { FaGithub } from "react-icons/fa6"
 import { FaLinkedin } from "react-icons/fa"
+import resume from './assets/CV_Guido_Rearte_Frontend_developer.pdf'
 
 function App() {
 
@@ -24,10 +25,10 @@ function App() {
         <div className="mr-56 max-lg:mr-0">
         <h1 className="text-3xl mt-8">Hola, me llamo Guido Rearte</h1>
           <h1 className="text-5xl font-bold mt-4">¡Soy Frontend Developer! </h1>
-          <div className="mt-12 flex ">  
+          <div className="mt-12">  
             <a className="float-left" href="https://github.com/guidorearte"><FaGithub size={40} /></a>
           <a className="float-left" href="https://www.linkedin.com/in/guidorearte/"><FaLinkedin size={40} /></a>
-          <button className="rounded-2xl border-2 border-gray-500 p-0 " href="/ruta/a/tu/archivo.pdf" download>Descargar CV</button>
+          <a className="py-1 ml-24 w-28 flex rounded-lg border-2 border-gray-500 " href={resume} download>Descargar CV</a>
           </div>
         </div>
       </div>
